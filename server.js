@@ -2,8 +2,8 @@ const express = require('express')
 const hbs = require('express-handlebars')
 const fs = require('fs')
 const bodyParser = require("body-parser");
-const puppyRoutes = require('./users')
-const newUploadroutes = require('./addDetails')
+// const puppyRoutes = require('./users')
+// const newUploadroutes = require('./addDetails')
 
 const server = express()
 
@@ -31,8 +31,8 @@ server.get('/', (req,res) => {
 //Routes 
 
 
-server.use('/features', functions)
-server.use('/', functions)
+// server.use('/features')
+// server.use('/')
 
 
 
