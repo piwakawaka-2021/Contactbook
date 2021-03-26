@@ -1,5 +1,5 @@
 {
-  "name": "Contactbook",
+  "name": "contactbook",
   "version": "1.0.0",
   "description": "Address book",
   "main": "index.js",
@@ -30,14 +30,12 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1"
-  
   },
   "devDependencies": {
     "eslint": "7.9.0",
     "eslint-config-eda": "0.1.4",
     "jest": "^26.0.1",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.7",
     "supertest": "^4.0.2"
   }
 }
-

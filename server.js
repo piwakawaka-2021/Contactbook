@@ -1,30 +1,38 @@
-const fs = require('fs')
 const express = require('express')
 const hbs = require('express-handlebars')
-const dogRoutes = require('./routes')
+const fs = require('fs')
+const bodyParser = require("body-parser");
+const puppyRoutes = require('./users')
+const newUploadroutes = require('./addDetails')
 
 const server = express()
 
-// Server configuration
+// Middlewares
 server.use(express.static('public'))
 server.use(express.urlencoded({ extended: false }))
 
-server.use('/puppies', dogRoutes)
-
-
-// Handlebars configuration
+// Handlebars 
 server.engine('hbs', hbs({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
-// Your routes/router(s) should go here
 
-server.get('/', (req, res) => {
-
-    fs.readFile('./data.json', 'utf-8', (err, data) => {
-        res.render('./home', JSON.parse(data))
-    })
-    //res.send("Contactbook")
+//This is rendering our login.hbs
+server.get('/', (req,res) => {
+  fs.readFile('./data.json', 'utf-8', (err, data) => {
+    if (err) return res.status(500)
+    const parsedData = JSON.parse(data)
+    res.render('login', parsedData)
+    
+    
+  })
+  
 })
+
+//Routes 
+
+
+server.use('/features', functions)
+server.use('/', functions)
 
 
 
