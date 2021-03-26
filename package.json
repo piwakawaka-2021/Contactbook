@@ -1,6 +1,43 @@
 {
+  "name": "Contactbook",
+  "version": "1.0.0",
+  "description": "Address book",
+  "main": "index.js",
+  "author": "EDA",
+  "license": "ISC",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index --ignore data.json",
+    "lint": "eslint .",
+    "test": "jest --watchAll"
+  },
+  "homepage": "https://github.com/piwakawaka-2021/Contactbook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piwakawaka-2021/Contactbook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piwakawaka-2021/Contactbook/issues"
+  },
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "data.json"
+    ]
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1"
+  
+  },
+  "devDependencies": {
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
+

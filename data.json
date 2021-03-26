@@ -3,16 +3,16 @@
     "name":"Mickey Mouse",
     "email":"cheese@gmail.com",
     "image":"/images/Mickey_mouse.jpg",
-    "phone number":"027 5275497"},
+    "phone_number":"027 5275497"},
 
     {"id":2,
     "name":"Wonderwoman",
     "email":"wonderwoman@gmail.com",
     "image":"/images/wonderwoman.jpg",
-    "phone number":"028 974534"},
+    "phone_number":"028 974534"},
 
     {"id":3,
     "name":"Captain Fantastic",
     "email":"capfantastic@gmail.com",
     "image":"/images/captain_fantastic.jpg",
-    "phone number":"026 476981"}]}
+    "phone_number":"026 476981"}]}
