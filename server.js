@@ -22,12 +22,16 @@ server.get('/', (req,res) => {
     if (err) return res.status(500)
     const parsedData = JSON.parse(data)
     res.render('login', parsedData)
-    
-    
-  })
+      })
   
 })
-
+server.get('/public/views/partials', (req,res) => {
+    fs.readFile('./data.json', 'utf-8', (err, data) => {
+      if (err) return res.status(500)
+      const parsedData = JSON.parse(data)
+      res.render('users', parsedData)
+    })
+})
 //Routes 
 
 
