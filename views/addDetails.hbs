@@ -1,0 +1,22 @@
+<form class="form" action="/people/{{id}}/edit" method="post">
+  <img class="img-circle" src="{{image}}" alt="{{name}}">
+
+  <label for="name" class="form-item">
+    Name:
+    <input type="text" name="name" value="{{name}}">
+  </label>
+  
+  <label for="email" class="form-item">
+    Email:
+    <input type="text" name="email" value="{{breed}}">
+  </label>
+  
+  <label for="phoneNumber" class="form-item">
+    Phone Number:
+    <input type="text" name="owner" value="{{owner}}">
+  </label>
+  
+  <input type="hidden" name="image" value="{{image}}">
+  
+  <input type="submit" name="" value="Submit">
+</form>
